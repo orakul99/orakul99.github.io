@@ -1,0 +1,31 @@
+/*
+  #custom-filters {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #FFF;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .filter-group {
+    flex: 1;
+    min-width: 200px;
+  }
+  .filter-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  .slider {
+    margin: 0 8px;
+  }
+  .filter-values {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+*/

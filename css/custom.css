@@ -1,0 +1,527 @@
+/* Common */
+
+.t-feed__post-popup h1:not(.anything) {font-size:30px !important;}
+
+.t-feed h1:not(.anything), .t-feed h2:not(.anything) {font-weight:400 !important;}
+
+.t-descr_xxs {font-size:14px !important;}
+
+.t-descr_xxs strong, .t-feed__post-popup__text strong {font-weight: 600 !important;}
+
+/* Brands-list */
+
+.t594__container {
+    max-width: 1160px !important;
+}
+
+.t594__item {
+    
+}
+
+
+.t594_active {
+    transition: ease-in-out 0.2s; 
+    scale: 1.3;
+}
+
+@media screen and (min-width: 481px) {
+    .uc-brands-list {padding-bottom:30px !important;}
+    
+    .uc-brands-list .t594__item {
+    padding:10px 10px !important;
+    }
+    
+    .uc-brands-list .t594__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden !important;
+    }    
+    
+    .uc-brands-list .t594__container::-webkit-scrollbar-track
+    {
+    	background-color: #dddddd;
+    }
+    
+    .uc-brands-list .t594__container::-webkit-scrollbar
+    {
+    	height: 5px;
+    	background-color: #dddddd;
+    }
+    
+    .uc-brands-list .t594__container::-webkit-scrollbar-thumb
+    {
+    	background-color: #686868;
+    }
+    
+    
+    .uc-brands-list .t594__item_6-in-row {
+        width:200px !important; flex-shrink: 0;
+        
+    }
+    
+    .uc-brands-list .t594__item_6-in-row:first-child {margin-left: auto;}
+    .uc-brands-list .t594__item_6-in-row:last-child {margin-right: auto;}
+}
+
+@media screen and (max-width: 480px) {
+    
+    .uc-brands-list .t594__item {
+    padding:0 10px !important;
+}
+
+    
+    .uc-brands-list .t594 {padding-bottom:10px;}
+    
+    .uc-brands-list .t594 {
+        position:relative;
+        -webkit-transition: height .25s ease;
+        -o-transition: height .25s ease;
+        transition: height .25s ease;
+        height:70px;
+        overflow: hidden !important;
+    }
+    
+    
+
+    .uc-brands-list .t594:not(.show) {
+    }
+    
+    .uc-brands-list .t594 .expand {
+        position:absolute; bottom:0;
+        width:100%; height:18px;
+        background-size:100%;   
+        border-bottom: 1px solid #919191;
+        background:
+        url('https://static.tildacdn.com/tild3231-6635-4436-b261-326631663630/expand.svg') center bottom no-repeat,
+        linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+    }
+    
+    .uc-brands-list .t594 .expand2 {
+        background:
+        url('https://static.tildacdn.com/tild6538-3231-4034-b362-313531303362/expand2.svg') center bottom no-repeat,
+        linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);
+    }
+    
+        
+    .uc-brands-list .t594__container {
+        padding-top: 0 !important;
+    
+        flex-wrap: wrap !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    
+    .uc-brands-list .t594__item_6-in-row, .t594__img {
+        width: 100px !important;
+    }
+
+}
+
+/* MAIN Banner */
+
+
+.t734, .t164 {
+margin: 0 auto !important;
+max-width:1160px !important;
+}
+
+.t734, .t-cover__carrier, .t734__table {
+
+}
+
+.t734 .t-slds__bullet_wrapper {
+bottom:0 !important;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+.t734, .t734 .t-cover__carrier, .t734 .t734__table, .t734 .t-slds__container {
+height:50vw !important;
+}
+
+}   
+
+
+/* PRODUCT list */
+
+.t-store__card__mark {
+    width: auto !important;
+    height: auto !important;
+    padding:5px 10px;
+    border-radius: 2px;
+    border:1px solid #c72026;
+}
+
+
+.js-store-load-more-btn {
+    background: #ffffff !important;
+    color: #e53333 !important;
+    font-size:12px !important;
+    font-weight: 500 !important;
+    border: 2px solid #e53333 !important;
+    border-radius: 2px !important;
+}
+
+
+@media screen and (min-width: 960px)
+{
+    .uc-shop-main .t-store__load-more-btn-wrap {text-align:right !important; }
+}
+
+/* PRODUCT page */
+
+.t-store__prod-popup__title-wrapper {
+    margin-bottom: 25px !important;
+}
+
+.t-store__prod-popup__brand {margin-top:30px; cursor:pointer;} 
+
+.t-store__prod-popup__link {margin-bottom:30px;}
+
+.t-store__prod-popup__brand span, .t-store__prod-popup__link a {
+    padding:6px 10px !important;
+    background: #ffffff !important;
+    border: 1px solid #c72026;
+    color:#c72026 !important;
+    font-weight:400 !important;
+    border-radius: 2px;
+    
+}
+
+
+    .js-store-prod-text, .t-store__prod-popup__brand, .t-store__prod-popup__link {
+        font-size: 14px !important;
+    }
+    
+.t-store__tabs__item-title {text-transform:uppercase;}
+
+@media screen and (max-width: 1200px) {
+
+    .t-store .t-store__tabs_accordion .t-store__tabs__item .t-store__tabs__item-title {
+    font-size: 14px !important
+}
+
+/*    .js-store-prod-all-text {font-size: 14px !important;} */
+}
+
+.t-store__tabs__content {
+display:block !important;
+max-width: 960px;
+}
+
+.t-store__tabs__close {
+display:none !important;
+}
+
+.t-store__tabs__item-button {
+border-bottom-color: transparent !important;
+pointer-events: none;
+}
+
+.t-store__tabs__item-button:not(:first-child) {
+    border-top-color: transparent !important;
+}
+
+.t-store__tabs__item[data-tab-title="Фото До и После"] {
+position:relative;
+}
+
+
+
+.t-store__tabs__item[data-tab-title="Фото До и После"] figure:after{
+    content: "";
+    opacity:0.8;
+    width: 60px;
+    height: 60px;
+    background: url("https://static.tildacdn.com/tild6233-3130-4233-b164-373864373533/magnifier-plus.svg");
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-23px;
+    margin-top:-10px;
+    pointer-events: none;
+
+}
+
+@media screen and (min-width: 960px) {
+ .t-store__tabs__item[data-tab-title="Фото До и После"] figure:after{
+    top:50%;
+    left:370px;  
+    width: 90px;
+    height: 90px;
+ }
+}
+
+ .t-store__tabs__item[data-tab-title="Смотрите также"] .t-store__tabs__content {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 10px;
+  max-width: 1160px !important;
+ }
+ 
+ @media screen and (max-width: 460px) {
+     .t-store__tabs__item[data-tab-title="Смотрите также"] .t-store__tabs__content {
+     grid-template-columns: repeat(2, 1fr) !important;
+     }
+ }
+ 
+   .t-store__tabs__item[data-tab-title="Смотрите также"] figure {
+    position:relative !important;
+   }
+ 
+  .t-store__tabs__item[data-tab-title="Смотрите также"] figure img{
+    padding-bottom:30px;
+   }
+ 
+ .t-store__tabs__item[data-tab-title="Смотрите также"] figcaption {
+     text-align:center; font-weight: 400 !important;
+    margin-top:-30px !important;
+    pointer-events: none;
+ }
+
+.t706 {display:none;}
+
+.js-store-prod-all-text > strong > em {
+    font-weight:normal !important;
+    font-style: normal !important;
+}    
+
+.js-store-prod-all-text > strong:nth-of-type(1) > u, .js-store-prod-all-text > strong:nth-of-type(2) > u, .js-store-prod-all-text > strong:nth-of-type(3) > u {
+    color: transparent;
+    margin-left: 6px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top:8px !important;
+    font-size:8px !important;
+}
+
+
+.js-store-prod-all-text > strong:has(u) {
+    font-weight:normal !important;
+    text-transform:uppercase;
+}
+
+.js-store-prod-all-text > strong:has(u) + br {
+    display: none;
+}
+
+.js-store-prod-all-text > strong > u:last-of-type {
+    padding-bottom:20px !important;
+}
+
+
+.js-store-prod-all-text > strong > em > u {
+    display: none !important;
+}
+
+
+.js-store-prod-all-text > strong:nth-of-type(1) > u:before, .js-store-prod-all-text > strong:nth-of-type(2) > u:before, .js-store-prod-all-text > strong:nth-of-type(3) > u:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin-top:-6px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.js-store-prod-all-text > strong:nth-of-type(1) > u:before {
+    background-image: url(https://mesoproff.ru/templates/mesoproff/img/icons/product_forms/icon_3.jpg);
+
+}
+
+.js-store-prod-all-text > strong:nth-of-type(2) > u:before {
+    background-image: url(https://mesoproff.ru/templates/mesoproff/img/icons/product_forms/icon_2.jpg);
+}
+
+.js-store-prod-all-text > strong:nth-of-type(3) > u:before {
+    background-image: url(https://mesoproff.ru/templates/mesoproff/img/icons/product_forms/icon_1.jpg);
+}
+
+
+/* EVENTS menu */ 
+
+
+/* Events List */
+
+.uc-main-events .t-feed__col-grid__post-wrapper, .uc-events .t-feed__col-grid__post-wrapper {
+border: 1px solid #c72026 !important;
+border-style: outset !important;
+
+}
+
+.uc-events .t-feed__post-tag {
+    position:absolute !important;
+    top:-1px;
+    right:-1px;
+    margin-top:0 !important;
+    padding:4px 6px !important;
+    background:#c72026 !important;
+    color:#ffffff !important;
+    font-weight:500 !important;
+    border-radius: 2px;
+    font-size:10px !important;
+}
+
+.uc-events .t-feed__post-descr {font-size:12px !important;}
+
+.uc-teachers .js-feed-post-descr strong {
+    font-weight:500 !important;
+    color: #c72026 !important;
+}
+
+
+
+
+/* Video header */
+    .t479__wrapper {
+        padding: 0 !important;
+    }
+    .t479__videowrapper video {
+        object-fit: cover; background-size: cover;
+    }
+
+@media screen and (max-width: 960px) {    
+    .t479__videowrapper video {height:50vw !important;}
+}    
+
+
+/* =News List */
+.t-feed__post-bgimg
+{
+background-position:top;    
+}
+
+.t-feed__post-imgwrapper  {position:relative;}
+
+.t-feed__post-label-wrapper {
+position:absolute !important;    
+top: 0 !important;
+left: initial !important;
+right: 0 !important;
+}
+
+.t-feed__post-label {
+    margin-top: 0 !important;
+    border-radius: 2px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.t-feed__post-label .js-feed-post-date {color: #ffffff !important; font-size:12px !important;}
+
+
+
+/* News page  */
+
+.js-feed-popup-title, .js-feed-close-text {font-size:14px; text-transform:uppercase; font-weight:500;}
+
+.t-feed__post-popup h1 {
+    
+}
+
+.t-feed__post-popup h2 {
+    font-family: 'Harmonia',Arial,sans-serif !important;
+    font-weight: 500 !important;
+    font-size:30px !important;
+}
+
+
+
+.t-text_md {font-size: 14px !important;}
+
+@media screen and (max-width: 960px) { 
+.t-feed__post-popup h1 {font-size:26px !important;}
+.t-feed__post-popup h2, .t-section__title {font-size:24px !important;}
+
+.t-text_md {font-size: 14px !important;}
+}    
+
+
+
+.js-feed-post-date, .t-feed__post-popup__tag {font-size:14px !important;}
+
+
+@media screen and (max-width: 960px) {.t-feed__post-popup__date-wrapper {margin-top: 5px;}}
+.js-feed-post-date {color: #c72026 !important; }
+
+.t-feed__post-popup__tag
+{
+background: #c72026 !important;
+color: #ffffff !important;
+font-weight: 500 !important;
+border: 1px solid #7b171b;
+border-radius: 2px;
+padding: 4px 6px;
+}
+
+.t-feed__post-popup__tag span {color: #ffffff !important;}
+
+
+
+/* Меню 1 уровня*/
+
+/* Поиск */
+.t985__search-widget-icon {
+box-shadow: none !important;
+}
+
+
+.t-search-widget__button, .t985__search-widget-button {
+position: absolute !important;
+}
+
+@media screen and (min-width:980px) and (max-width: 1180px) {
+    .t228__rightside {display:none !important;}
+    .t228__centerside.t228__menualign_left {
+    padding-left: 30px;
+    }
+    
+    .t-search-widget__button, .t985__search-widget-button {top:15px !important; right:15px !important;} 
+    
+}
+@media screen and (min-width: 1180px) {
+    
+    .t-sociallinks {display:none !important;}
+    
+    .t228__rightside {padding-right:60px !important;}
+    
+    .t-search-widget__button, .t985__search-widget-button {
+        left:50% !important;
+        right: initial !important;
+        margin-left:545px !important;
+        top:15px !important;
+    }
+
+}
+
+.t985__blockinput {height:50px !important;}
+.t-search-widget__header {padding: 5px 0 !important;}
+/* Поиск */
+
+.tmenu-mobile__imglogo {
+    width:140px !important;
+}    
+
+.tmenu-mobile__container {
+    height:40px !important;
+    min-height:40px !important;
+}
+.t-menuburger {
+    width: 20px !important;
+    height: 12px !important;
+}
+
+.t228__list {
+    margin-left:0 !important;
+}
+
+/* Меню 1 уровня*/

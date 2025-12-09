@@ -1,0 +1,345 @@
+<!--allrecords--> <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6719940" data-tilda-page-id="57292729" data-tilda-page-alias="orakul99" data-tilda-formskey="920c55dcbd6f6b039a4131d516719940" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec818767355" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <canvas id="matrix" style="position:fixed; z-index:-9999; top:0; left:0; height:100%; width:100%;"></canvas> <script>
+   // geting canvas by Boujjou Achraf
+        var c = document.getElementById("matrix");
+        var ctx = c.getContext("2d");
+
+        //making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        //chinese characters - taken from the unicode charset
+        var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 10;
+        var columns = c.width/font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1; 
+
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "#008000";//green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for(var i = 0; i < drops.length; i++)
+            {
+                //a random chinese character to print
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+</script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec817802974" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <style>
+    body {
+        background: #000000 !important;
+    }
+    #allrecords, .t-records {
+        background: transparent !important;
+    }
+
+    .uc-sitegallery .t-container
+    {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    
+    
+    .uc-sitegallery .t-col {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    
+
+    
+    .uc-sitegallery .t983__row {
+        margin-top: 0 !important;
+    }
+    
+    .uc-sitegallery .t983__col  {
+       margin-bottom: 0;
+    }   
+
+@media only screen and (min-width: 961px) {
+    .uc-sitegallery .t-col_4 {
+     max-width: 33.3333%;
+    }
+    
+    .uc-sitegallery .t983__col:hover .t983__card-image {
+      transition: opacity 0.5s; 
+      opacity:0.25 !important;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    .uc-sitegallery .t-col_4 {
+      max-width: 33.3333%;
+    }
+    
+    .uc-sitegallery .t983__col {
+      float: left;
+    }    
+    
+    .t983__card-block-wrapper {display:none;}
+
+}
+
+@media only screen and (max-width: 480px) {
+    .uc-sitegallery .t-col_4 {
+      max-width: 100%;
+    }
+    
+    .uc-sitegallery .t983__card {
+        overflow: visible !important;
+    }
+
+    .uc-sitegallery .t983__col  {
+       margin-bottom: 60px !important;
+    }    
+    
+    .uc-sitegallery .t983__card-block-wrapper {
+       padding-top:100px !important;
+    }
+    
+    .uc-sitegallery .t-card__descr {
+        min-height: 40px !important;
+    }
+
+}
+
+
+    .uc-sitegallery .t983__col {
+
+    }
+
+
+
+
+</style> <!-- nominify end --> </div> </div> </div> </div> <div id="rec817793719" class="r t-rec t-rec_pt_0 t-rec_pb_0 uc-sitegallery" style="padding-top:0px;padding-bottom:0px; " data-animationappear="off" data-record-type="983"> <!-- t983 --> <div class="t983"> <div class="t983__container t-card__container t-container " data-ratio=3_2> <div class="t983__row" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3433-3734-4033-b138-373765353761__aktiv-pokrovka-ru-20.png"> <div class="t983__card-image t-bgimg " data-original="images/tild3433-3734-4033-b138-373765353761__aktiv-pokrovka-ru-20.png"
+bgimgfield="li_img__5182949799990"
+style="background: url('images/tild3433-3734-4033-b138-373765353761__-__resizeb__20x__aktiv-pokrovka-ru-20.png') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://aktiv-pokrovka.ru/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__5182949799990">
+Интернет-магазин коттеджного посёлка
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3762-3165-4131-a665-303761333662__regenflex.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3762-3165-4131-a665-303761333662__regenflex.jpg"
+bgimgfield="li_img__1757273043088"
+style="background: url('images/tild3762-3165-4131-a665-303761333662__-__resizeb__20x__regenflex.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://regenflex.net" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1757273043088">
+Интернет-магазин медицинских изделий
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3635-6362-4630-b365-346439386131__mesoproff_step.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3635-6362-4630-b365-346439386131__mesoproff_step.jpg"
+bgimgfield="li_img__5182949799991"
+style="background: url('images/tild3635-6362-4630-b365-346439386131__-__resizeb__20x__mesoproff_step.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57254615.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__5182949799991">
+Лендинг обучающего онлайн-мероприятия для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6566-3637-4666-a437-396431363363__mesoproff_prototype.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6566-3637-4666-a437-396431363363__mesoproff_prototype.jpg"
+bgimgfield="li_img__5182949799992"
+style="background: url('images/tild6566-3637-4666-a437-396431363363__-__resizeb__20x__mesoproff_prototype.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/mesoproff" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__5182949799992">
+Прототип сайта / каталога препаратов и&nbsp;мероприятий для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3230-3733-4935-b034-626263306139__mesoproff_collagen.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3230-3733-4935-b034-626263306139__mesoproff_collagen.jpg"
+bgimgfield="li_img__1730137667475"
+style="background: url('images/tild3230-3733-4935-b034-626263306139__-__resizeb__20x__mesoproff_collagen.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57256607.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137667475">
+Лендинг препарата инъекционной&nbsp;косметологии
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3564-3963-4165-b338-323463653566__mesoproff_petaran.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3564-3963-4165-b338-323463653566__mesoproff_petaran.jpg"
+bgimgfield="li_img__1730137665216"
+style="background: url('images/tild3564-3963-4165-b338-323463653566__-__resizeb__20x__mesoproff_petaran.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57256605.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137665216">
+Лендинг препарата инъекционной&nbsp;косметологии
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6137-3464-4864-b133-656365306634__mesoproff_newlic.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6137-3464-4864-b133-656365306634__mesoproff_newlic.jpg"
+bgimgfield="li_img__1730137669373"
+style="background: url('images/tild6137-3464-4864-b133-656365306634__-__resizeb__20x__mesoproff_newlic.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57256599.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137669373">
+Лендинг препаратов инъекционной&nbsp;косметологии
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6265-3765-4562-b737-313364646264__mesoproff_master.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6265-3765-4562-b737-313364646264__mesoproff_master.jpg"
+bgimgfield="li_img__1730137796277"
+style="background: url('images/tild6265-3765-4562-b737-313364646264__-__resizeb__20x__mesoproff_master.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57255879.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137796277">
+Мастер-шаблон обучающих мероприятий для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6666-3835-4430-b138-313034326631__mesoproff_bb.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6666-3835-4430-b138-313034326631__mesoproff_bb.jpg"
+bgimgfield="li_img__1730137797189"
+style="background: url('images/tild6666-3835-4430-b138-313034326631__-__resizeb__20x__mesoproff_bb.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57254621.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137797189">
+Лендинг обучающего мероприятия для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3635-3836-4466-b533-386239303563__mesoproff_azbuka.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3635-3836-4466-b533-386239303563__mesoproff_azbuka.jpg"
+bgimgfield="li_img__1730137797531"
+style="background: url('images/tild3635-3836-4466-b533-386239303563__-__resizeb__20x__mesoproff_azbuka.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57254617.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730137797531">
+Лендинг обучающего мероприятия для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3933-3765-4765-b734-323837353830__mesoproff_itm.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3933-3765-4765-b734-323837353830__mesoproff_itm.jpg"
+bgimgfield="li_img__1730138003682"
+style="background: url('images/tild3933-3765-4765-b734-323837353830__-__resizeb__20x__mesoproff_itm.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57255427.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138003682">
+Лендинг обучающего мероприятия для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6139-6566-4634-b037-626263616334__mesoproff_webinar.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6139-6566-4634-b037-626263616334__mesoproff_webinar.jpg"
+bgimgfield="li_img__1730138004233"
+style="background: url('images/tild6139-6566-4634-b037-626263616334__-__resizeb__20x__mesoproff_webinar.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57256415.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138004233">
+Лендинг обучающего вебинара для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6336-6237-4138-b032-316332313132__mesoproff_distrib.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6336-6237-4138-b032-316332313132__mesoproff_distrib.jpg"
+bgimgfield="li_img__1730138089971"
+style="background: url('images/tild6336-6237-4138-b032-316332313132__-__resizeb__20x__mesoproff_distrib.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="/page57255881.html" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138089971">
+Лендинг программы обучения&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6166-3461-4338-b331-353265323536__old_landrover-ru-top.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6166-3461-4338-b331-353265323536__old_landrover-ru-top.jpg"
+bgimgfield="li_img__1730138170403"
+style="background: url('images/tild6166-3461-4338-b331-353265323536__-__resizeb__20x__old_landrover-ru-top.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138170403">
+Сайт Landrover.ru (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3734-6133-4038-a633-396636646637__old_jaguar-ru-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3734-6133-4038-a633-396636646637__old_jaguar-ru-topaz-.jpg"
+bgimgfield="li_img__1730138171368"
+style="background: url('images/tild3734-6133-4038-a633-396636646637__-__resizeb__20x__old_jaguar-ru-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138171368">
+Сайт Jaguar.ru (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3961-6634-4337-b966-613037623964__old_jlr-connect-topa.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3961-6634-4337-b966-613037623964__old_jlr-connect-topa.jpg"
+bgimgfield="li_img__1730138257225"
+style="background: url('images/tild3961-6634-4337-b966-613037623964__-__resizeb__20x__old_jlr-connect-topa.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138257225">
+Сток авто Jaguar Land Rover (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3933-3139-4631-a335-636136613037__old_jlrdp-ml-topaz-u.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3933-3139-4631-a335-636136613037__old_jlrdp-ml-topaz-u.jpg"
+bgimgfield="li_img__1730138285087"
+style="background: url('images/tild3933-3139-4631-a335-636136613037__-__resizeb__20x__old_jlrdp-ml-topaz-u.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138285087">
+Армянский сайт Land Rover (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6335-3635-4639-b138-346138373533__old_cto-landrover-to.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6335-3635-4639-b138-346138373533__old_cto-landrover-to.jpg"
+bgimgfield="li_img__1730138393224"
+style="background: url('images/tild6335-3635-4639-b138-346138373533__-__resizeb__20x__old_cto-landrover-to.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730138393224">
+Калькулятор ТО Land Rover (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3839-6165-4731-b733-363934643463__old_cto-jaguar-topaz.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3839-6165-4731-b733-363934643463__old_cto-jaguar-topaz.jpg"
+bgimgfield="li_img__1730190255261"
+style="background: url('images/tild3839-6165-4731-b733-363934643463__-__resizeb__20x__old_cto-jaguar-topaz.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190255261">
+Калькулятор Jaguar (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3936-3366-4837-b563-393638656264__old_mzd-tilda-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3936-3366-4837-b563-393638656264__old_mzd-tilda-topaz-.jpg"
+bgimgfield="li_img__1730190406640"
+style="background: url('images/tild3936-3366-4837-b563-393638656264__-__resizeb__20x__old_mzd-tilda-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190406640">
+Лендинги автодилеров Mazfa
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6630-3562-4237-a265-656463383631__old_jlr-frm-topaz-te.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6630-3562-4237-a265-656463383631__old_jlr-frm-topaz-te.jpg"
+bgimgfield="li_img__1730190820403"
+style="background: url('images/tild6630-3562-4237-a265-656463383631__-__resizeb__20x__old_jlr-frm-topaz-te.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190820403">
+Проект конструктора форм
+</div> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3034-3932-4430-b538-663663333366__old_ru-disney-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3034-3932-4430-b538-663663333366__old_ru-disney-topaz-.jpg"
+bgimgfield="li_img__1730190711239"
+style="background: url('images/tild3034-3932-4430-b538-663663333366__-__resizeb__20x__old_ru-disney-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190711239">
+Интранет-портал Дисней
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6131-6137-4531-b235-613830626633__old_syngenta-solguar.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6131-6137-4531-b235-613830626633__old_syngenta-solguar.jpg"
+bgimgfield="li_img__1730190864497"
+style="background: url('images/tild6131-6137-4531-b235-613830626633__-__resizeb__20x__old_syngenta-solguar.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190864497">
+Мобильное приложение для&nbsp;сотрудников сельскохозяйственной компании
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3033-3461-4634-b161-626662316436__old_prodigi-topaz-fa.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3033-3461-4634-b161-626662316436__old_prodigi-topaz-fa.jpg"
+bgimgfield="li_img__1730190286445"
+style="background: url('images/tild3033-3461-4634-b161-626662316436__-__resizeb__20x__old_prodigi-topaz-fa.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://prodigi.kz/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190286445">
+Интернет-магазин спутникового оборудования
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3163-3562-4862-a334-656561363238__old_martinex-topaz-t.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3163-3562-4862-a334-656561363238__old_martinex-topaz-t.jpg"
+bgimgfield="li_img__1730190463765"
+style="background: url('images/tild3163-3562-4862-a334-656561363238__-__resizeb__20x__old_martinex-topaz-t.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://www.martinex.ru/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190463765">
+Сайт-представительство / каталог препаратов инъекционной&nbsp;косметологии
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3939-6266-4534-b133-616539323261__old_mesorus_2-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3939-6266-4534-b133-616539323261__old_mesorus_2-topaz-.jpg"
+bgimgfield="li_img__1730190479771"
+style="background: url('images/tild3939-6266-4534-b133-616539323261__-__resizeb__20x__old_mesorus_2-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://www.mesorus.ru/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190479771">
+Сайт обучающей организации для&nbsp;косметологов
+</div> </a> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6266-3230-4439-b132-666564623233__old_kongress3-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6266-3230-4439-b132-666564623233__old_kongress3-topaz-.jpg"
+bgimgfield="li_img__1730190638225"
+style="background: url('images/tild6266-3230-4439-b132-666564623233__-__resizeb__20x__old_kongress3-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190638225">
+Лендинги мероприятий для&nbsp;косметологов (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6633-3038-4838-b062-613537333336__old_sc-travel-topaz-.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6633-3038-4838-b062-613537333336__old_sc-travel-topaz-.jpg"
+bgimgfield="li_img__1730190677078"
+style="background: url('images/tild6633-3038-4838-b062-613537333336__-__resizeb__20x__old_sc-travel-topaz-.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190677078">
+Сайт мероприятий для&nbsp;косметологов (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3039-6562-4838-a336-623866653531__old_lne-topaz-face-t.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3039-6562-4838-a336-623866653531__old_lne-topaz-face-t.jpg"
+bgimgfield="li_img__1730190745436"
+style="background: url('images/tild3039-6562-4838-a336-623866653531__-__resizeb__20x__old_lne-topaz-face-t.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190745436">
+Сайт печатного издания для&nbsp;косметологов (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3535-3837-4434-b065-343431653833__old_shaluny-topaz-fa.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3535-3837-4434-b065-343431653833__old_shaluny-topaz-fa.jpg"
+bgimgfield="li_img__1730190962566"
+style="background: url('images/tild3535-3837-4434-b065-343431653833__-__resizeb__20x__old_shaluny-topaz-fa.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://shaluny.ru/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190962566">
+Интернет-магазин детской одежды
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3563-6231-4665-b836-646463313464__old_vicshu-topaz-fac.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3563-6231-4665-b836-646463313464__old_vicshu-topaz-fac.jpg"
+bgimgfield="li_img__1730190999037"
+style="background: url('images/tild3563-6231-4665-b836-646463313464__-__resizeb__20x__old_vicshu-topaz-fac.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730190999037">
+Сайт-визитка бизнес-тренера (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6439-3633-4563-b735-373765613330__old_ecopan-topaz-tex.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6439-3633-4563-b735-373765613330__old_ecopan-topaz-tex.jpg"
+bgimgfield="li_img__1730191018003"
+style="background: url('images/tild6439-3633-4563-b735-373765613330__-__resizeb__20x__old_ecopan-topaz-tex.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730191018003">
+Лендинг строительной франшизы (закрыто)
+</div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild3331-3734-4061-b037-316136613365__old_atomfashion-topa.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild3331-3734-4061-b037-316136613365__old_atomfashion-topa.jpg"
+bgimgfield="li_img__1730191068132"
+style="background: url('images/tild3331-3734-4061-b037-316136613365__-__resizeb__20x__old_atomfashion-topa.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://www.atomfashion.com/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730191068132">
+Интернет-магазин субкультурных аксессуаров
+</div> </a> </div> </div> </div> </div> </div> </div> </div> </div> <div class="t983__row" style="margin-top:0px" data-auto-correct-mobile-width="false"> <div class="t983__col t-card__col t-card__col_withoutbtn t-col t-col_4 t-align_left" itemscope> <div class="t983__card" style=""> <div class="t-divider__wrapper t983__card-wrapper t983__card-wrapper_3-2"> <div class="t983__card-content "> <meta itemprop="image" content="images/tild6661-3832-4662-b838-633961666165__old_vhp-topaz-face-t.jpg"> <div class="t983__card-image t-bgimg " data-original="images/tild6661-3832-4662-b838-633961666165__old_vhp-topaz-face-t.jpg"
+bgimgfield="li_img__1730191113738"
+style="background: url('images/tild6661-3832-4662-b838-633961666165__-__resizeb__20x__old_vhp-topaz-face-t.jpg') no-repeat center; background-size: cover;"></div> <div class="t983__card-overlay " style="background: -moz-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -webkit-linear-gradient(top, rgba(169,169,169,0.10), rgba(169,169,169,0.10)); background: -o-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10)); background: -ms-linear-gradient(top, rgba(169,169,169,0.10), rgba(0,0,0,0.10));"></div> <div class="t983__card-block-wrapper"> <div class="t983__card-block t983__card-block_hover "> <div class="t983__card-show"> <div
+class="t-divider t983__card-line" data-divider-fieldset="color2,heightpx,opacity"
+style="opacity:0.0;"></div> </div> <div class="t983__card-hide"> <a href="https://vap-photo.github.io/" class="t-card__link"> <div class="t-card__descr t-descr t-descr_sm" field="li_descr__1730191113738">
+Галерея фотопроекта<br /><br /> </div> </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <script>t_onReady(function() {t_onFuncLoad('t983_init',function() {t983_init('817793719');});});function t_onFuncLoadMulti(funcName1,funcName2,okFunc,time) {if(typeof window[funcName1]==='function'&&typeof window[funcName2]==='function') {okFunc();} else {var startTime=Date.now();setTimeout(function checkFuncExist() {var currentTime=Date.now();if(typeof window[funcName1]==='function'&&typeof window[funcName2]==='function') {okFunc();return;};if(document.readyState==='complete'&&currentTime - startTime>5000&&typeof window[funcName1]==='function'&&typeof window[funcName2]==='function') {throw new Error(funcName1 + ' is undefined');}
+setTimeout(checkFuncExist,time||100);});}}</script> <style> #rec817793719 .t-card__title{font-weight:300;}#rec817793719 .t-card__descr{font-size:18px;color:#ffffff;font-weight:400;}@media screen and (max-width:480px),(orientation:landscape) and (max-height:480px){#rec817793719 .t-card__descr{font-size:14px;}}</style> </div> </div> <!--/allrecords-->

@@ -1,0 +1,65 @@
+<!--allrecords--> <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="6719940" data-tilda-page-id="73071839" data-tilda-page-alias="barnfooter" data-tilda-formskey="920c55dcbd6f6b039a4131d516719940" data-tilda-lazy="yes" data-tilda-project-lang="RU" data-tilda-root-zone="com" data-tilda-project-headcode="yes" data-tilda-project-country="RU"> <div id="rec1190748491" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!-- Как представить характеристики товара в виде таблицы в Tilda mo-ti.ru --><script>
+document.addEventListener("DOMContentLoaded", function(){
+function createTable(){
+
+    if(document.querySelectorAll('.t-store__tabs__item:first-of-type').length){
+        let pElem = document.querySelectorAll('.t-store__tabs__item:first-of-type p');
+        for (let i = 0; i < pElem.length; i++) {
+            let row = pElem[i].innerText
+            row = row.split(':');
+            let newRow = `<div class="chr-title">${row[0]}</div><div class="chr-descr">${ $.trim(row[1]) }</div>`;
+            pElem[i].innerHTML = newRow;
+        };
+        document.querySelector('.t-store__tabs__item:first-of-type').classList.add('show-chrs');
+    };
+}; 
+    
+
+setTimeout(function () {
+    if(document.querySelectorAll('.t-store__product-snippet').length)  createTable();
+}, 1500);
+
+
+document.addEventListener('click', function(e){
+    let prodElem = e.target.closest('a[href*="/tproduct/"]');
+    if (prodElem != null) { 
+        setTimeout(function () {  createTable() }, 1000);
+    };
+});
+
+});
+</script> <style>
+.t-store__tabs__item:first-of-type p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.t-store__tabs__item:first-of-type p div {
+    border: 0 !important;
+    margin-top: -2px;
+    padding: 5px;
+}
+
+.chr-descr {
+    margin-left: -1px;
+}    
+
+.chr-title {
+    font-weight: 600;
+}
+
+.t-store__tabs__item:first-of-type {
+    display: none;
+}
+
+.t-store__tabs__item:first-of-type.show-chrs {
+    display: block;
+}
+.js-store-product[data-product-pack-m="0"] p.js-store-prod-weight  {
+    display: none;
+}
+.js-store-product[data-product-pack-x="0"] p.js-store-prod-dimensions {
+    display: none;
+}
+</style> <!-- nominify end --> </div> </div> </div> </div> </div> <!--/allrecords-->
